@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - [Dhiyaul auliyah Jadid]</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            padding: 100px 0;
+            background-color: #f8f9fa; /* Latar belakang abu-abu muda untuk Hero */
+        }
+        .hero img {
+            width: 180px;
+            height: 180px; /* Tambahkan tinggi agar bulat sempurna */
+            object-fit: cover; /* Pastikan gambar mengisi area tanpa terdistorsi */
+            border-radius: 50%;
+            border: 5px solid #0d6efd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+        }
+        .portfolio-item img, .portfolio-item iframe {
+            width: 100%;
+            height: 250px; /* Tinggi seragam untuk tampilan media */
+            border-radius: 10px;
+            object-fit: cover;
+            border: none; /* Hapus border pada iframe */
+        }
+        .skill-badge {
+            font-size: 1.1em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Profil Saya</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Media Saya</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero text-center">
+        <div class="container">
+            <img src="gambar1.jpg">
+            <h1 class="mt-4 fw-bold text-primary">Dhiyaul auliyah Jadid</h1>
+            <p class="lead">Mahasiswa Pemrograman Web | UNPAM | Web Developer Pemula</p>
+            <a href="#about" class="btn btn-outline-primary btn-lg mt-3">Lihat Identitas Lengkap</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Tentang Saya (Identitas)</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm p-4">
+                        <h4 class="card-title text-primary mb-3">Data Pribadi</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Nama Lengkap:</strong> Dhiyaul auliyah jadid</li>
+                            <li class="list-group-item"><strong>NIM:</strong> [GANTI DENGAN NIM ANDA]</li>
+                            <li class="list-group-item"><strong>Program Studi:</strong> Teknik Informatika</li>
+                            <li class="list-group-item"><strong>Universitas:</strong> Pamulang</li>
+                            <li class="list-group-item"><strong>Alamat Saat Ini:</strong> bojong poncol RT 03</li>
+                            <li class="list-group-item"><strong>Email:</strong> dhiyaulj@gmail.com</li>
+                            <li class="list-group-item"><strong>Deskripsi Diri:</strong> Saya adalah mahasiswa yang antusias dalam mempelajari pengembangan web. Saya fokus pada penguasaan HTML, CSS (termasuk Bootstrap), dan JavaScript.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Keahlian (Skills)</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <span class="badge bg-primary skill-badge">HTML5</span>
+                    <span class="badge bg-primary skill-badge">CSS3</span>
+                    <span class="badge bg-primary skill-badge">Bootstrap 5</span>
+                    <span class="badge bg-success skill-badge">JavaScript Dasar</span>
+                    <span class="badge bg-info skill-badge">Pemrograman Web</span>
+                    <span class="badge bg-warning skill-badge">Microsoft Office</span>
+                    <span class="badge bg-danger skill-badge">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Media Saya (Foto & Video)</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="portfolio-item card shadow-sm p-2">
+                        <img src="gbr3.jpg" alt="Foto Aktivitas 1">
+                        <h5 class="mt-3 fw-semibold">Foto saya pribadi</h5>
+                        <p>Dokumentasi saat mengikuti PKL diperusahaan.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-item card shadow-sm p-2">
+                        <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=FOTO+Aktivitas+2" alt="Foto Aktivitas 2">
+                        <h5 class="mt-3 fw-semibold">Foto Waktu PKL</h5>
+                        <p>Belajar bersama untuk persiapan ujian akhir.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-item card shadow-sm p-2">
+                        <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=FOTO+Aktivitas+3" alt="Foto Aktivitas 3">
+                        <h5 class="mt-3 fw-semibold">Foto Proyek Sederhana</h5>
+                        <p>Tampilan dari hasil proyek HTML/CSS yang sudah selesai.</p>
+                    </div>
+                </div>
+                
+                <h3 class="mt-5 mb-3 col-12 fw-bold">Video Saya</h3>
+
+                <div class="col-md-4">
+                    <div class="portfolio-item card shadow-sm p-2">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1" allowfullscreen></iframe>
+                        <h5 class="mt-3 fw-semibold">Video Tutorial Web</h5>
+                        <p>Contoh video tutorial atau presentasi proyek.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-item card shadow-sm p-2">
+                        <iframe src="https://www.youtube.com/embed/yFjYgA3Xz7Q" title="Video 2" allowfullscreen></iframe>
+                        <h5 class="mt-3 fw-semibold">Video Dokumentasi UNPAM</h5>
+                        <p>Dokumentasi kegiatan kampus atau acara penting.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-item card shadow-sm p-2">
+                        <iframe src="https://www.youtube.com/embed/0B9H5B9Rj3g" title="Video 3" allowfullscreen></iframe>
+                        <h5 class="mt-3 fw-semibold">Video Hobi/Lainnya</h5>
+                        <p>Video yang menunjukkan hobi atau minat pribadi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Hubungi Saya</h2>
+
+            <form class="mx-auto card p-4 shadow-sm" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label class="form-label">Nama</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama...">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Email kamu...">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Pesan</label>
+                    <textarea class="form-control" rows="4" placeholder="Tulis pesan..."></textarea>
+                </div>
+
+                <button class="btn btn-primary w-100">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 [Nama Anda]. Dibuat dengan Bootstrap 5.</p>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
